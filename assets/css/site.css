@@ -12,6 +12,7 @@
   --accent-soft: #4a6478;
   --warm: #9c5d2f;        /* secondary CTA — warm copper */
   --warm-deep: #7a481f;
+  --rar-red: #c41a1a;     /* from the logo — used only for decorative tick marks */
   --rule: #d4cdb8;
 
   --serif: 'Source Serif 4', 'Source Serif Pro', Georgia, serif;
@@ -99,6 +100,14 @@ img { display: block; max-width: 100%; height: auto; }
   white-space: nowrap;
 }
 .brand:hover { color: var(--accent); }
+
+.site-header .brand { display: inline-flex; align-items: center; }
+
+.brand-logo {
+  display: block;
+  height: 2.5rem;
+  width: auto;
+}
 .brand-tag {
   font-family: var(--sans);
   font-size: 0.72rem;
@@ -282,7 +291,7 @@ img { display: block; max-width: 100%; height: auto; }
   display: block;
   width: 2.4rem;
   height: 1px;
-  background: var(--accent);
+  background: var(--rar-red);
   margin-top: 1rem;
 }
 
@@ -315,7 +324,7 @@ img { display: block; max-width: 100%; height: auto; }
   display: block;
   width: 2.4rem;
   height: 1px;
-  background: var(--accent);
+  background: var(--rar-red);
   margin-bottom: 1rem;
 }
 
