@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.className = 'js';</script>
   <title>RAR Manufacturing — Precision Machining in the Greater Cincinnati Area</title>
   <meta name="description" content="A small Greater Cincinnati machine shop, in business since 1992. Design, prototyping, reverse engineering and small-lot production for aerospace, automotive, robotics, and machine-tool industries.">
-  <link rel="canonical" href="https://www.rarmfg.com/">
 
   <meta property="og:title" content="RAR Manufacturing — Precision Machining in the Greater Cincinnati Area">
   <meta property="og:description" content="A small machine shop, in business since 1992. Design, prototyping, reverse engineering and small-lot production.">
@@ -16,7 +16,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Jost:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/site.css">
@@ -41,8 +41,10 @@
   <header class="site-header">
     <div class="wrap site-header-inner">
       <a href="index.html" class="brand" aria-label="RAR Manufacturing — home">
-        <img src="images/logo.svg" alt="RAR Manufacturing" class="brand-logo" height="40">
+        <img src="images/logo.svg" alt="RAR Manufacturing" class="brand-logo" height="48">
       </a>
+
+      <span class="masthead-note">Est. 1992 · Greater Cincinnati</span>
 
       <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
 
@@ -55,74 +57,98 @@
     </div>
   </header>
 
+  <div class="sheet">
   <main id="main">
 
+    <!-- HERO -->
     <section class="hero" aria-label="Introduction">
-      <div class="hero-quote">
-        <span class="eyebrow">RAR Manufacturing · est. 1992</span>
-        <blockquote>
-          A small shop, solving industrial problems by engineering
-          and then building solutions.
-        </blockquote>
-        <p class="attribution">Richard A. Roth, founder</p>
+      <div class="hero-inner">
+        <div class="hero-quote">
+          <span class="eyebrow" data-load style="--d:0">RAR Manufacturing — Est. 1992</span>
+          <h1 class="hero-title" data-load style="--d:90">Engineered, <em>then&nbsp;built.</em></h1>
+          <blockquote data-load style="--d:220">
+            A small shop, solving industrial problems by engineering
+            and then building solutions.
+          </blockquote>
+          <p class="attribution" data-load style="--d:320">Richard A. Roth, founder</p>
+        </div>
+
+        <figure class="hero-figure">
+          <div class="hero-plate">
+            <div class="hero-shot">
+              <img class="hero-photo" src="images/shop/185855_orig.jpg"
+                   alt="Wide view of the RAR Manufacturing shop floor: a small purpose-built shop with overhead gantry crane, knee mill, surface grinder, bandsaw and welding cabinet."
+                   width="824" height="548" fetchpriority="high">
+              <img class="hero-sketch" src="images/shop/185855_sketch.png"
+                   alt="" aria-hidden="true" width="824" height="548" decoding="async">
+              <figcaption>The shop · built 1996</figcaption>
+            </div>
+          </div>
+        </figure>
       </div>
-      <figure class="hero-photo">
-        <img src="images/shop/185855_orig.jpg"
-             alt="Wide view of the RAR Manufacturing shop floor: a small purpose-built shop with overhead gantry crane, knee mill, surface grinder, bandsaw and welding cabinet."
-             width="824" height="548"
-             fetchpriority="high">
-        <figcaption>The shop. Built 1996.</figcaption>
-      </figure>
     </section>
 
-    <article class="prose">
-      <span class="eyebrow">About the shop</span>
-      <p>
-        RAR Manufacturing, LLC is a small shop, in business for over thirty years,
-        specializing in design and manufacture with a large base of engineering and
-        manufacturing expertise to draw from. Our services include small-lot production,
-        prototyping, engineering, reverse engineering, made-to-order and
-        engineered-to-order parts. We also have secondary operations facilities for
-        plating, anodizing, heat treating, and completing larger fabrication jobs.
-        Materials we work in include carbon alloys, tool steels, aluminum, brass,
-        stainless steels, titanium, and plastics. We have extensive experience designing
-        in both 2-D and 3-D CAD. Our expertise has been utilized in such industries as
-        aerospace, automotive, agriculture, non-destructive testing, packaging machinery,
-        building, inspection, automation, robotics, special machinery, and machine tools.
-      </p>
+    <!-- ABOUT THE SHOP -->
+    <section class="about" aria-labelledby="about-title">
+      <aside class="about-aside">
+        <figure class="portrait">
+          <span class="portrait-frame">
+            <img src="images/about/richard-roth.jpg"
+                 alt="Richard A. Roth, founder of RAR Manufacturing"
+                 width="192" height="160" loading="lazy" decoding="async">
+          </span>
+          <figcaption><strong>Richard A. Roth</strong><br>Founder · Mechanical Engineer<br>Univ. of Cincinnati</figcaption>
+        </figure>
+        <p class="pull">From concept to complete product — design, manufacture, and controls.</p>
+      </aside>
 
-      <p>
-        We specialize in giving our customers a one-on-one personalized relationship.
-        Our goal is to provide assistance and solutions for individuals who would like
-        to develop an idea or have a special need for a product or part. We strive to
-        work with clients from concept to complete product — including the design,
-        manufacture, and controls (pneumatic, hydraulic, and electrical).
-      </p>
+      <div class="about-prose">
+        <span class="eyebrow" id="about-title">About the shop</span>
+        <p>
+          RAR Manufacturing, LLC is a small shop, in business for over thirty years,
+          specializing in design and manufacture with a large base of engineering and
+          manufacturing expertise to draw from. Our services include small-lot production,
+          prototyping, engineering, reverse engineering, made-to-order and
+          engineered-to-order parts. We also have secondary operations facilities for
+          plating, anodizing, heat treating, and completing larger fabrication jobs.
+          Materials we work in include carbon alloys, tool steels, aluminum, brass,
+          stainless steels, titanium, and plastics. We have extensive experience designing
+          in both 2-D and 3-D CAD. Our expertise has been utilized in such industries as
+          aerospace, automotive, agriculture, non-destructive testing, packaging machinery,
+          building, inspection, automation, robotics, special machinery, and machine tools.
+        </p>
+        <p>
+          We specialize in giving our customers a one-on-one personalized relationship.
+          Our goal is to provide assistance and solutions for individuals who would like
+          to develop an idea or have a special need for a product or part. We strive to
+          work with clients from concept to complete product — including the design,
+          manufacture, and controls (pneumatic, hydraulic, and electrical).
+        </p>
+        <p>
+          Richard A. Roth, owner, has been a mechanical engineer for over forty years.
+          He graduated from the University of Cincinnati with a Bachelor's Degree in
+          Mechanical Engineering and worked in the machine tool and OEM packaging
+          machinery industries for many years. In 1992, Richard started a small business
+          with the goal of solving industrial problems by engineering and then building
+          solutions. After acquiring several machine tools to aid with manufacturing
+          projects, Richard built a 2,600 square-foot shop in 1996. RAR Manufacturing
+          has been designing and engineering solutions from that shop ever since.
+        </p>
+      </div>
+    </section>
 
-      <p>
-        Richard A. Roth, owner, has been a mechanical engineer for over forty years.
-        He graduated from the University of Cincinnati with a Bachelor's Degree in
-        Mechanical Engineering and worked in the machine tool and OEM packaging
-        machinery industries for many years. In 1992, Richard started a small business
-        with the goal of solving industrial problems by engineering and then building
-        solutions. After acquiring several machine tools to aid with manufacturing
-        projects, Richard built a 2,600 square-foot shop in 1996. RAR Manufacturing
-        has been designing and engineering solutions from that shop ever since.
-      </p>
-    </article>
-
-    <hr class="rule">
-
-    <section class="section section--feature">
-      <div class="section-read" style="padding: 0;">
+    <!-- SIX SERVICES -->
+    <section class="section" aria-labelledby="services-title">
+      <div class="section-head">
         <span class="eyebrow">What we do</span>
-        <h2>Six ways of working.</h2>
-        <p class="subhead">From a sketch on a napkin to a finished part — six things we do every week.</p>
+        <h2 class="section-title" id="services-title">Six ways of working.</h2>
+        <p class="section-sub">A large base of engineering and manufacturing expertise to draw from.</p>
       </div>
 
-      <div class="card-grid" style="margin-top: 2.5rem;">
+      <div class="card-grid">
 
         <article class="card">
+          <span class="card-index">01</span>
           <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/>
             <path d="m22 12.18-9.18 4.18a2 2 0 0 1-1.64 0L2 12.18"/>
@@ -133,6 +159,7 @@
         </article>
 
         <article class="card">
+          <span class="card-index">02</span>
           <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M10 2v7.527a2 2 0 0 1-.211.896L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.069-10.127A2 2 0 0 1 14 9.527V2"/>
             <path d="M8.5 2h7"/>
@@ -143,6 +170,7 @@
         </article>
 
         <article class="card">
+          <span class="card-index">03</span>
           <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/>
             <path d="m14.5 12.5 2-2"/>
@@ -155,6 +183,7 @@
         </article>
 
         <article class="card">
+          <span class="card-index">04</span>
           <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
             <path d="M3 3v5h5"/>
@@ -164,6 +193,7 @@
         </article>
 
         <article class="card">
+          <span class="card-index">05</span>
           <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M16.5 9.4 7.55 4.24"/>
             <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
@@ -175,6 +205,7 @@
         </article>
 
         <article class="card">
+          <span class="card-index">06</span>
           <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M20 7h-9"/>
             <path d="M14 17H5"/>
@@ -188,62 +219,86 @@
       </div>
     </section>
 
-    <hr class="rule">
+    <!-- SELECTED WORK -->
+    <section class="section" aria-labelledby="work-title">
+      <div class="section-head">
+        <span class="eyebrow">Selected work</span>
+        <h2 class="section-title" id="work-title">What comes off the floor.</h2>
+        <p class="section-sub">A small, hand-picked sample — fixtures, machined parts, prototypes, and full automation cells.</p>
+      </div>
 
-    <section class="section">
-      <div class="section-read" style="padding: 0;">
+      <div class="work-grid">
+        <a class="work-item work-item--lead" href="capabilities.html#robotics">
+          <span class="work-frame">
+            <img src="images/services/robotics/2693943_orig.jpg" alt="A custom robotic automation cell built by RAR Manufacturing." loading="lazy" decoding="async" width="800" height="600">
+          </span>
+          <span class="work-cap"><span>Robotic cell</span><span class="work-idx">01</span></span>
+        </a>
+        <a class="work-item" href="capabilities.html#parts-and-fixtures">
+          <span class="work-frame">
+            <img src="images/services/parts-and-fixtures/1781730_orig.jpg" alt="A precision-machined work-holding fixture." loading="lazy" decoding="async" width="400" height="300">
+          </span>
+          <span class="work-cap"><span>Fixture</span><span class="work-idx">02</span></span>
+        </a>
+        <a class="work-item" href="capabilities.html#parts-and-fixtures">
+          <span class="work-frame">
+            <img src="images/services/parts-and-fixtures/2049716_orig.jpg" alt="A set of machined metal parts." loading="lazy" decoding="async" width="400" height="300">
+          </span>
+          <span class="work-cap"><span>Machined parts</span><span class="work-idx">03</span></span>
+        </a>
+        <a class="work-item" href="capabilities.html#prototyping">
+          <span class="work-frame">
+            <img src="images/services/prototyping/4873795_orig.jpg" alt="A functional prototype part." loading="lazy" decoding="async" width="400" height="300">
+          </span>
+          <span class="work-cap"><span>Prototype</span><span class="work-idx">04</span></span>
+        </a>
+        <a class="work-item" href="capabilities.html#machinery">
+          <span class="work-frame">
+            <img src="images/services/machinery/3687513_orig.jpg" alt="A piece of custom special machinery." loading="lazy" decoding="async" width="400" height="300">
+          </span>
+          <span class="work-cap"><span>Special machine</span><span class="work-idx">05</span></span>
+        </a>
+      </div>
+      <p class="work-note">A small sample drawn from a much larger archive of work.</p>
+    </section>
+
+    <!-- THE SHOP (machines) -->
+    <section class="section" aria-labelledby="shop-title">
+      <div class="section-head">
         <span class="eyebrow">The shop</span>
-        <h2>What's on the floor.</h2>
-        <p style="color: var(--muted); margin-bottom: 2rem;">
-          A small, well-stocked shop with mills, lathes, grinders, saws, inspection
-          equipment, welding and fabrication, and a wood-working corner. A tour:
-        </p>
+        <h2 class="section-title" id="shop-title">What's on the floor.</h2>
+        <p class="section-sub">A small, well-stocked shop — mills, lathes, grinders, saws, inspection, welding and fabrication. A tour:</p>
       </div>
 
       <div class="tile-grid">
-        <a class="tile" href="/the-shop.html#shop-overview">
-          <span class="tile-image"><img src="images/shop/185855_orig.jpg" alt="" loading="lazy" width="400" height="300"></span>
+        <a class="tile" href="the-shop.html#shop-overview">
+          <span class="tile-image"><img src="images/shop/185855_orig.jpg" alt="" loading="lazy" decoding="async" width="400" height="300"></span>
           <span class="tile-label">Shop overview <span class="tile-count">6</span></span>
         </a>
-        <a class="tile" href="/the-shop.html#milling-machines">
-          <span class="tile-image"><img src="images/shop/4887062_orig.jpg" alt="" loading="lazy" width="400" height="300"></span>
+        <a class="tile" href="the-shop.html#milling-machines">
+          <span class="tile-image"><img src="images/shop/4887062_orig.jpg" alt="" loading="lazy" decoding="async" width="400" height="300"></span>
           <span class="tile-label">Milling machines <span class="tile-count">8</span></span>
         </a>
-        <a class="tile" href="/the-shop.html#lathes">
-          <span class="tile-image"><img src="images/shop/1475151_orig.jpg" alt="" loading="lazy" width="400" height="300"></span>
+        <a class="tile" href="the-shop.html#lathes">
+          <span class="tile-image"><img src="images/shop/1475151_orig.jpg" alt="" loading="lazy" decoding="async" width="400" height="300"></span>
           <span class="tile-label">Lathes <span class="tile-count">8</span></span>
         </a>
-        <a class="tile" href="/the-shop.html#grinders">
-          <span class="tile-image"><img src="images/shop/2449560_orig.jpg" alt="" loading="lazy" width="400" height="300"></span>
+        <a class="tile" href="the-shop.html#grinders">
+          <span class="tile-image"><img src="images/shop/2449560_orig.jpg" alt="" loading="lazy" decoding="async" width="400" height="300"></span>
           <span class="tile-label">Grinders <span class="tile-count">9</span></span>
         </a>
-        <a class="tile" href="/the-shop.html#saws">
-          <span class="tile-image"><img src="images/shop/148124_orig.jpg" alt="" loading="lazy" width="400" height="300"></span>
-          <span class="tile-label">Saws <span class="tile-count">4</span></span>
+        <a class="tile" href="the-shop.html#welding-and-fabrication">
+          <span class="tile-image"><img src="images/shop/5210994_orig.jpg" alt="" loading="lazy" decoding="async" width="400" height="300"></span>
+          <span class="tile-label">Welding &amp; fab <span class="tile-count">2</span></span>
         </a>
-        <a class="tile" href="/the-shop.html#inspection">
-          <span class="tile-image"><img src="images/shop/650454_orig.jpg" alt="" loading="lazy" width="400" height="300"></span>
-          <span class="tile-label">Inspection <span class="tile-count">4</span></span>
-        </a>
-        <a class="tile" href="/the-shop.html#welding-and-fabrication">
-          <span class="tile-image"><img src="images/shop/5210994_orig.jpg" alt="" loading="lazy" width="400" height="300"></span>
-          <span class="tile-label">Welding &amp; fabrication <span class="tile-count">2</span></span>
-        </a>
-        <a class="tile" href="/the-shop.html#special-machines">
-          <span class="tile-image"><img src="images/shop/6214488_orig.jpg" alt="" loading="lazy" width="400" height="300"></span>
+        <a class="tile" href="the-shop.html#special-machines">
+          <span class="tile-image"><img src="images/shop/6214488_orig.jpg" alt="" loading="lazy" decoding="async" width="400" height="300"></span>
           <span class="tile-label">Special machines <span class="tile-count">4</span></span>
-        </a>
-        <a class="tile" href="/the-shop.html#wood-working">
-          <span class="tile-image"><img src="images/shop/2741381_orig.jpg" alt="" loading="lazy" width="400" height="300"></span>
-          <span class="tile-label">Wood working <span class="tile-count">7</span></span>
-        </a>
-        <a class="tile" href="/the-shop.html#misc">
-          <span class="tile-image"><img src="images/shop/2491781_orig.jpg" alt="" loading="lazy" width="400" height="300"></span>
-          <span class="tile-label">Miscellaneous <span class="tile-count">11</span></span>
         </a>
       </div>
     </section>
 
+    <!-- CTA -->
     <section class="cta" aria-label="Get in touch">
       <div class="cta-inner">
         <span class="eyebrow">Start a conversation</span>
@@ -252,7 +307,7 @@
           Send a note. Rick reads every message personally — and answers
           his own phone. Quotes are free; first conversations are short.
         </p>
-        <a class="cta-button" href="/contact.html">
+        <a class="cta-button" href="contact.html">
           Send a note <span class="arrow" aria-hidden="true">→</span>
         </a>
       </div>
@@ -261,12 +316,49 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-row">
-      <span class="brand">RAR Manufacturing, LLC<span class="brand-tag">est. 1992</span></span>
-      <span>Greater Cincinnati Area</span>
-      <span>© <span id="year"></span> RAR Manufacturing, LLC</span>
+    <div class="footer-inner">
+      <div class="footer-mark">
+        <span class="brand-name">RAR Manufacturing, LLC</span>
+        <span class="footer-copy">© <span id="year"></span> · Greater Cincinnati Area · Rick answers his own phone</span>
+      </div>
+
+      <div class="title-block" aria-label="Drawing title block">
+        <div class="tb-cell tb-title">
+          <span class="tb-label">Title</span>
+          <span class="tb-value">RAR Manufacturing, LLC</span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Dwg No.</span>
+          <span class="tb-value">RAR-HOME-01</span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Scale</span>
+          <span class="tb-value">None</span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Drawn</span>
+          <span class="tb-value">R.A.R.</span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Date</span>
+          <span class="tb-value">1996</span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Rev</span>
+          <span class="tb-value tb-rev">▲ A</span>
+        </div>
+        <div class="tb-cell">
+          <span class="tb-label">Sheet</span>
+          <span class="tb-value">1 of 1</span>
+        </div>
+        <div class="tb-cell tb-loc">
+          <span class="tb-label">Location</span>
+          <span class="tb-value">39.10°N 84.51°W</span>
+        </div>
+      </div>
     </div>
   </footer>
+  </div>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   <script src="assets/js/nav.js" defer></script>

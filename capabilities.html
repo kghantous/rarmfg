@@ -16,7 +16,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Jost:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/site.css">
@@ -27,8 +27,10 @@
   <header class="site-header">
     <div class="wrap site-header-inner">
       <a href="index.html" class="brand" aria-label="RAR Manufacturing — home">
-        <img src="images/logo.svg" alt="RAR Manufacturing" class="brand-logo" height="40">
+        <img src="images/logo.svg" alt="RAR Manufacturing" class="brand-logo" height="48">
       </a>
+
+      <span class="masthead-note">Est. 1992 · Greater Cincinnati</span>
 
       <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="primary-nav">Menu</button>
 
@@ -41,6 +43,7 @@
     </div>
   </header>
 
+  <div class="sheet">
   <main id="main">
 
     <header class="page-intro">
@@ -74,7 +77,7 @@
       <div class="section-read" style="padding: 0;">
         <span class="eyebrow">What we do</span>
         <h2>Services</h2>
-        <p class="subhead">From a sketch on a napkin to a finished part — six things we do every week.</p>
+        <p class="subhead">A large base of engineering and manufacturing expertise to draw from.</p>
       </div>
 
       <div class="card-grid" style="margin-top: 2.5rem;">
@@ -321,7 +324,7 @@
           Send a note. Rick reads every message personally — and answers
           his own phone. Quotes are free; first conversations are short.
         </p>
-        <a class="cta-button" href="/contact.html">
+        <a class="cta-button" href="contact.html">
           Send a note <span class="arrow" aria-hidden="true">→</span>
         </a>
       </div>
@@ -330,12 +333,28 @@
   </main>
 
   <footer class="site-footer">
-    <div class="footer-row">
-      <span class="brand">RAR Manufacturing, LLC<span class="brand-tag">est. 1992</span></span>
-      <span>Greater Cincinnati Area</span>
-      <span>© <span id="year"></span> RAR Manufacturing, LLC</span>
+    <div class="footer-inner">
+      <div class="footer-mark">
+        <span class="brand-name">RAR Manufacturing, LLC</span>
+        <span class="footer-copy">© <span id="year"></span> · Greater Cincinnati Area · Rick answers his own phone</span>
+      </div>
+
+      <div class="title-block" aria-label="Drawing title block">
+        <div class="tb-cell tb-title">
+          <span class="tb-label">Title</span>
+          <span class="tb-value">Capabilities</span>
+        </div>
+        <div class="tb-cell"><span class="tb-label">Dwg No.</span><span class="tb-value">RAR-CAP-02</span></div>
+        <div class="tb-cell"><span class="tb-label">Scale</span><span class="tb-value">None</span></div>
+        <div class="tb-cell"><span class="tb-label">Drawn</span><span class="tb-value">R.A.R.</span></div>
+        <div class="tb-cell"><span class="tb-label">Date</span><span class="tb-value">1996</span></div>
+        <div class="tb-cell"><span class="tb-label">Rev</span><span class="tb-value tb-rev">▲ A</span></div>
+        <div class="tb-cell"><span class="tb-label">Sheet</span><span class="tb-value">1 of 1</span></div>
+        <div class="tb-cell tb-loc"><span class="tb-label">Location</span><span class="tb-value">39.10°N 84.51°W</span></div>
+      </div>
     </div>
   </footer>
+  </div>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   <script src="assets/js/nav.js" defer></script>

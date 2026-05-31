@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1200 261" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(0.985166,0,0,0.72468,0,0)">
+        <rect x="0" y="0" width="1200" height="360" style="fill:white;fill-opacity:0;"/>
+    </g>
+    <g>
+        <g transform="matrix(1,0,0,1,20,90)">
+            <text x="0px" y="0px" style="font-family:'Arial-Black', 'Arial', sans-serif;font-weight:900;font-size:110px;fill:#c41a1a;">R</text>
+        </g>
+        <g transform="matrix(1,0,0,1,120,170)">
+            <text x="0px" y="0px" style="font-family:'Arial-Black', 'Arial', sans-serif;font-weight:900;font-size:90px;fill:#c41a1a;">A</text>
+        </g>
+        <g transform="matrix(1,0,0,1,240,255)">
+            <text x="0px" y="0px" style="font-family:'Arial-Black', 'Arial', sans-serif;font-weight:900;font-size:110px;fill:#c41a1a;">R</text>
+        </g>
+        <g transform="matrix(1,0,0,1,347.320116,238.582499)">
+            <text x="0px" y="0px" style="font-family:'Arial-Black', 'Arial', sans-serif;font-weight:900;font-size:64px;fill:#c41a1a;">MANUF<tspan x="253.469px 302.094px 351.875px " y="0px 0px 0px ">ACT</tspan>URING<tspan x="633.75px 655.062px " y="0px 0px ">, </tspan>LL<tspan x="760.688px " y="0px ">C</tspan></text>
+        </g>
+    </g>
+</svg>
