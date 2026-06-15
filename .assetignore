@@ -1,2 +1,7 @@
+.git
+node_modules
+package-lock.json
 scripts
 .gitignore
+wrangler.jsonc
+.assetsignore
